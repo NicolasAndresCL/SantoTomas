@@ -1,7 +1,5 @@
 # Diseño de Software · IEI-050
 
-[![CI](https://github.com/nicolascanoleal/DisenoSoftware/actions/workflows/ci.yml/badge.svg)](https://github.com/nicolascanoleal/DisenoSoftware/actions/workflows/ci.yml)
-
 Repositorio de documentación, planificación y código de proyectos para la asignatura **Diseño de Software** (código IEI-050) impartida en la Universidad Santo Tomás (Chile).
 
 **Docente**: Giovanni Cáceres R. (gcaceres6@santotomas.cl)  
@@ -63,7 +61,6 @@ Plan de proyecto para el **Estudio de Caso 1**, correspondiente a un sistema de 
 ---
 
 ### 3. Sistema de Arriendo de Vehículos
-**Carpeta**: `SistemaArriendoVehiculos/`
 **Fecha**: 20 de agosto de 2026
 
 Aplicación funcional que cubre el ciclo completo del negocio de arriendo: registro de usuarios,
@@ -76,15 +73,11 @@ vigente, transiciones de estado de la reserva— viven en una capa de servicios 
 excepciones de dominio, y un único manejador las traduce a códigos HTTP con un contrato de error
 uniforme. Incluye 128 pruebas con 96 % de cobertura y pipeline de integración continua.
 
-Ingreso por defecto: `admin@estacionamiento.cl` / `1234`. El detalle completo —arquitectura,
-máquina de estados de la reserva, endpoints y puesta en marcha— está en
-[`SistemaArriendoVehiculos/README.md`](SistemaArriendoVehiculos/README.md).
-
-Desde el 20 de agosto de 2026 el sistema se desarrolla en su **propio repositorio**,
-[NicolasAndresCL/SistemaArriendoVehiculos](https://github.com/NicolasAndresCL/SistemaArriendoVehiculos),
-donde viven su integración continua, la contenerización (Docker y Compose), los manifiestos
-de Kubernetes, la infraestructura en Terraform y el pipeline de Jenkins. La copia de esta
-carpeta corresponde al estado del 20 de agosto.
+El sistema se desarrolla en un **repositorio independiente**,
+[NicolasAndresCL/SistemaArriendoVehiculos](https://github.com/NicolasAndresCL/SistemaArriendoVehiculos).
+Su código, documentación, integración continua e infraestructura se mantienen y publican desde
+ese repositorio. La carpeta local `SistemaArriendoVehiculos/` se conserva en este equipo, pero
+está excluida del repositorio de la asignatura y no se incluye en sus commits ni pushes.
 
 ---
 
@@ -263,17 +256,12 @@ no por ausencia de contenido.
 
 ### Código
 
-- **`SistemaArriendoVehiculos/`**
-  Sistema de arriendo de vehículos: backend Django + DRF (`backend/`) e interfaz NiceGUI
-  (`frontend/`) sobre SQLite. Trae su propio `README.md`, entorno virtual `.venv/` y suite de
-  pruebas. La base de datos `db.sqlite3` y el entorno no se versionan: se regeneran con
-  `migrate` y `seed_demo`.
+- El sistema de arriendo de vehículos vive en el repositorio independiente indicado en la
+  sección «Trabajos en curso»; no es código del repositorio de esta asignatura.
 
 - **`.github/`**
-  Integración continua y plantillas del repositorio. El workflow `ci.yml` corre en cascada
-  lint → tests con umbral de cobertura → arranque real del sistema completo → verificación de
-  hardening de producción (`check --deploy`). Incluye Dependabot y plantillas de issue y de
-  pull request.
+  Plantillas de issue y de pull request. El repositorio académico no tiene CI propio; el
+  pipeline del sistema de arriendo está en su repositorio independiente.
 
 ### Material de referencia (no editable)
 - **`Clase_1_Diseno_Software.pdf`**  
