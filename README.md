@@ -128,10 +128,30 @@ y de la corrección hecha al diagrama de otro grupo.
 ---
 
 ### 6. Prueba de relaciones entre clases UML
+**Versión resuelta vigente**: `Prueba de Diseno de Software - Relaciones UML (IEI-050) - Resuelta con diagrama.docx`. Incluye las alternativas señaladas, respuestas explicadas y el diagrama UML gráfico con clases, relaciones y multiplicidades. Sustituye la copia resuelta previa, que solo contenía una especificación textual. Se regenera con `.\env\Scripts\python.exe .\generar-diagrama-prueba-uml.py`.
+
 **Archivo**: `Prueba de Diseno de Software - Relaciones UML (IEI-050).docx`
 **Fecha**: 7 de octubre de 2026
 
 Evaluación de 75 minutos y 60 puntos, dirigida a estudiantes de segundo semestre de Ingeniería en Informática. Comprueba la diferencia entre clases y objetos, lectura de multiplicidades, asociación, agregación, composición, herencia y elaboración de un diagrama aplicado al contexto de cursos universitarios. Incluye pauta docente y criterios de corrección. El contenido sintetiza la secuencia de publicaciones de LONKODEV del 7 de octubre y se alinea con el modelo de clases UML de la academia preparado en la Unidad II.
+
+### 7. Cinco pruebas adicionales de práctica
+
+Se prepararon cinco evaluaciones complementarias para estudiantes de segundo semestre, cada una con 75 minutos y 60 puntos. Cada prueba tiene una versión para estudiantes y otra resuelta con alternativas explicadas, respuestas modelo y pauta del caso aplicado. Los temas cubren planificación y ciclo de vida; Scrum, XP, Kanban y DevOps; requisitos y Proceso Unificado; relaciones entre clases; e integración de un sistema de reserva de salas. Las pruebas 3, 4 y 5 incluyen diagramas UML gráficos en sus soluciones.
+
+El índice de archivos y la instrucción de generación están en [`pruebas-adicionales-iei-050/README.md`](pruebas-adicionales-iei-050/README.md). La fuente reproducible es [`generar-cinco-pruebas-ie050.py`](generar-cinco-pruebas-ie050.py), que usa como plantilla la evaluación de relaciones UML. Regeneración: `./env/Scripts/python.exe ./generar-cinco-pruebas-ie050.py`.
+
+### 8. Cinco pruebas adicionales basadas en LONKODEV
+
+Se agregan cinco evaluaciones de práctica basadas en la secuencia de capturas UML de Instagram del profesor LONKODEV. Cada prueba dura 75 minutos y suma 60 puntos: 10 alternativas (20 puntos), 5 enunciados de verdadero/falso con justificación (10 puntos) y un ejercicio aplicado de diagrama UML (30 puntos). Cada versión resuelta incluye pauta explicada y diagrama UML dibujado; la versión de estudiantes deja espacio para desarrollarlo.
+
+Los temas son clases, objetos, asociaciones, multiplicidades, agregación, composición, herencia e integración de relaciones. El índice de ambas colecciones está en [pruebas-adicionales-iei-050/README.md](pruebas-adicionales-iei-050/README.md). La nueva serie se regenera con [generar-pruebas-lonkodev.py](generar-pruebas-lonkodev.py): ./env/Scripts/python.exe ./generar-pruebas-lonkodev.py.
+
+### 9. Prueba de refuerzo LONKODEV EVA2
+
+Se añadió una prueba centrada en los puntos que el profesor recalca en la publicación EVA2: la parte sobrevive al todo en agregación, muere con él en composición, las multiplicidades se leen desde ambos extremos y el triángulo vacío de herencia apunta a la superclase. También comprueba que una cardinalidad como 1..* no convierte por sí sola una asociación en agregación o composición.
+
+Incluye 10 alternativas, 5 enunciados de verdadero/falso con justificación y un ejercicio integrador sobre Curso–Evaluación, Factura–Línea y Perro–Animal. La versión resuelta incorpora las respuestas y el diagrama UML dibujado. Archivos: [prueba](pruebas-adicionales-iei-050/Prueba_06_lonkodev-eva2-puntos-recalcados.docx), [versión resuelta](pruebas-adicionales-iei-050/Prueba_06_lonkodev-eva2-puntos-recalcados_resuelta.docx). Se regenera con ./env/Scripts/python.exe ./generar-prueba-lonkodev-eva2.py.
 
 ## Productos exigidos en el laboratorio (lámina 43)
 
